@@ -1,0 +1,247 @@
+
+<!-- ##Hello World in anguar## -->
+
+ <!-- <h1>Hello World! {{title}} here</h1>
+
+
+
+  ##interpolation##
+
+<h1>{{data}}</h1>
+<h2>{{2+2}}</h2>
+<h2>{{getdata()}}</h2>
+<h3>{{title === "Priyanshu Patel"}}</h3>
+<h3>{{2*2/4}}</h3>
+
+
+##Components##
+
+<app-dummycomp></app-dummycomp>
+<app-inlinestyle></app-inlinestyle>
+<app-inlinetemplate></app-inlinetemplate>
+<app-both></app-both>
+<app-login></app-login> -->
+
+<!-- ##Events## -->
+
+
+<!-- <button height="100px" width="100px" (click)="getName('Priyanshu')"></button>
+<input type="text" #box1 (keyup)="getvalue(box1.value)" placeholder="keyup">
+<br>
+<input type="text" #box2 (keydown)="getvalue(box2.value)" placeholder="keydown">
+<br>
+<input type="text" #box3 (blur)="getvalue(box3.value)" placeholder="blur">
+<br>
+<input type="text" #box4 (input)="getvalue(box4.value)" placeholder="input">
+<br>
+<h3 (mouseover)="getvalue('over')">mouseover</h3>
+<br><br>
+<h3 (mouseleave)="getvalue('leave')">mouseleave</h3> -->
+
+
+<!-- <input type="text" #fname placeholder="First Name">
+<input type="text" #lname placeholder="Last Name">
+<br>
+<br>
+<button (click)="getvalue(fname.value, lname.value)"></button> -->
+
+
+
+
+<!-- <input type="text" #name placeholder="Name">
+<button (click)="show(name.value)">click me!</button>
+<h1 (mouseover)="show(name.value)">{{bold}}</h1> -->
+
+<!-- ##counter## -->
+
+<!-- <button (click)="counter('add')">ADD</button>
+<p>
+  count is :  {{count}}
+</p>
+<button (click)="counter('subs')">SUBS</button>
+
+<h1 class="heading">heloo</h1>
+<app-login></app-login>
+
+
+<input type="text" value="{{name}}" name="XYz" disabled="{{disable}}">
+<br><br><button (click)="disandena()"></button> <br><br>
+<input type="text" [value]="name" name="XYz" [disabled]="disable"> -->
+
+
+<!-- ##if-else## -->
+
+<!-- <h1 *ngIf = "show; then ifblock else elseblock"></h1>
+<ng-template #ifblock>
+  <h1>IF</h1>
+</ng-template>
+<ng-template #elseblock>
+  <h1>ELSE</h1>
+</ng-template>
+
+<ng-template [ngIf] = "color==='red'">
+<h1 style="color: red;">RED</h1>
+</ng-template>
+<ng-template [ngIf] = "color==='green'">
+  <h1 style="color: green;">GREEN</h1>
+  </ng-template>
+  <ng-template [ngIf] = "color==='blue'">
+    <h1 style="color: blue;">BLUE</h1>
+    </ng-template> -->
+
+    
+<!-- ##Switch## -->
+
+<!-- <input type="text" #clr placeholder="Enter color"> -->
+<!-- <button (click)="getColor(clr.value)">Get Color</button> -->
+<!-- <h1 [style.color]="color">Hello Priyanshu</h1> -->
+
+
+<!-- <div [ngSwitch]="color"> -->
+  <!-- <h1 *ngSwitchCase = "'red'" style="color: red;">Color Over Here</h1> -->
+  <!-- <h1 *ngSwitchCase = "'blue'" style="color: blue;">Color Over Here</h1> -->
+  <!-- <h1 *ngSwitchCase = "'green'" style="color: green;">Color Over Here</h1> -->
+  <!-- <h1 *ngSwitchCase = "'yellow'" style="color: yellow;">Color Over Here</h1> -->
+  <!-- <h1 *ngSwitchDefault style="color: skyblue;">Color Over Here</h1> -->
+<!-- </div> -->
+
+
+<!-- ##For## -->
+
+<!-- <h3 *ngFor="let item of user">{{item}}</h3>
+<h3 *ngFor="let item of userdata">{{item.name}}--{{item.phone}}--{{item.email}}</h3> -->
+
+<!-- ##Nested## -->
+
+<!-- <ul *ngFor="let data of userdata1">
+  <li>{{data.name}}</li>
+  <li>{{data.phone}}</li>
+  <li>Social accounts</li>
+  <ul *ngFor="let uSocial of data.social">
+    <li>{{uSocial}}</li>
+  </ul>
+</ul> -->
+
+<!-- ##Form## -->
+
+<!-- <form  #forms="ngForm"(ngSubmit)="getForm(forms.value)">
+<input class="mx-2 mt-2" type="text" ngModel name="User" placeholder="Enter Name">
+<br><br>
+<input class="mx-2" type="number" ngModel name="Phone" placeholder="Enter Phone">
+<br><br>
+<button class="btn btn-primary mx-2">
+  Sign In
+</button>
+</form>
+<h3 class="mx-2">
+ name : {{userdata.User}} <br>
+ phone : {{userdata.Phone}}
+</h3>
+
+##Toggle##
+
+<button (click)="hide()" class="btn btn-danger mx-2">Toggle</button>
+<h3 class="mx-2" *ngIf="display">Toggle</h3> -->
+
+
+<!-- ##Todo list## -->
+
+<!-- <div class="container-fluid">
+  <div class="row">
+    <h1 class="text-center bg-info display-6">
+      TODO LIST
+    </h1>
+
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Enter Task</label>
+        <input #task type="text" name="user" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
+        <!-- <div id="emailHelp" class="form-text"></div> -->
+      <!-- </div> -->
+      <!-- <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div> -->
+      <!-- <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div> -->
+      <!-- <button type="submit" class="btn btn-primary" (click)="addtask(task.value)">Add Task</button>
+    </form>
+
+    <ul *ngFor="let item of list" class="mx-2">
+      <li>{{item.name}} <button class="btn-danger btn" (click)="Remove(item.id)">Remove Task</button></li>
+    </ul>
+  </div>
+</div> -->
+
+<!-- ##send data to child## -->
+
+
+<!-- <app-child [item]="data1"></app-child>
+<button class="btn btn-success" (click) = "Update()">Update Value</button> -->
+<!-- <ul *ngFor="let user of userDetails">
+  <app-user-details [item]="user"></app-user-details>
+</ul> -->
+
+<!-- <h1>{{data3}}</h1>
+<app-user2 (updatedataevent)="updatedata($event)"></app-user2> -->
+
+<!-- ##twowaybind## -->
+
+<!-- <input type="text" [(ngModel)]="name3">
+<h2>{{name3}}</h2> -->
+
+<!-- ##pipes## -->
+
+<!-- <h1>{{title | uppercase}}</h1>
+<h1>{{title | slice   : 3:6 | uppercase}}</h1>
+<h1>{{userDetails | json}}</h1>
+<h1>{{2378 | currency:"INR"}}</h1>
+
+<h1>{{2378 | usdInr : 80}}</h1> -->
+
+<!-- ##template form## -->
+
+<!-- <form #form = "ngForm" (ngSubmit)="UserLogin(form.value)">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" required #name="ngModel" pattern="[a-zA-Z]+$" name="email" ngModel class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
+    <!-- //inplace of pattern if you write email you will only allowed to enter a email add -->
+    <!-- <span *ngIf="name.invalid && name.touched" style="color: red;">enter valid input</span>
+
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1"  class="form-label">Password</label>
+    
+    <input type="password" minlength="8" #password="ngModel" name="password" ngModel class="form-control" id="exampleInputPassword1">
+    <span *ngIf="password.invalid && password.touched" style="color: red;">enter valid input</span>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button [disabled]="form.invalid" type="submit" class="btn btn-primary">Submit</button>
+</form> -->
+
+
+
+
+<!-- ##Reactive Form## -->
+<!-- <form [formGroup]="loginform" (ngSubmit)="loginuser()">
+  <input type="text" placeholder="Enter Name" name="user" formControlName="user">
+  <br>
+  <span *ngIf="user && user.invalid && user.touched" style="color: red;">Enter Valid Input</span>
+  <br>
+  <input type="password" placeholder="enter password" name="Password" formControlName="password">
+  <br>
+  <span *ngIf="password && password.invalid && password.touched" style="color: red;">Enter Valid Input</span>
+  <br>
+  <button [disabled]="loginform.invalid">Login</button>
+</form> -->
+
+<!-- ##directives## -->
+
+<h1 appRede1>Priyanshu Patel</h1>
+
